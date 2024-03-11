@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        h1{
+            font-size: 80px;
+        }
+        .pc,
+        .talet,
+        .mobile{
+        font-size: 68px;
+        display: none;
+        }
+
+        /*BREAK POINTED*/
+        /*PC*/
+        @media (min-width:1024px){
+            .pc{
+                display: block;
+            }
+        }
+        /*Tablet*/
+        @media (min-width:740px)and (max-width:1023px){
+
+            .talet{
+                display: block;
+            }
+        }
+        /*Mobile*/
+        @media (max-width:740px){
+            .mobile{
+                display: block;
+            }
+        }
+
+    </style>
+   
+    </head>
+    <body>
+        <h1>MEDIA QUERIES</h1>
+        <h2 class="PC">PC</h2>
+        <h2 class="Tablet">Tablet</h2>
+        <h2 class="Mobile">Mobile</h2>
+    </body>
+</html>
